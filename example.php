@@ -18,6 +18,7 @@ try {
     $curl = new Curl('http://www.elcorteingles.es');
 
     $scraping = new Scraping($curl);
+    
     $scraping->filter('//html/body//img','src');
     $result = $scraping->perform();
     // Images
