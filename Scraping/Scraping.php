@@ -91,8 +91,7 @@ class Scraping implements ScrapingInterface
      */
     protected function setOptions(array $options = array())
     {
-        if (!empty($options))
-        {
+        if (!empty($options)) {
             $this->options = array_merge($this->options, $options);
         }
     }

@@ -64,8 +64,7 @@ class Curl implements CurlInterface
      */
     protected function setOptions(Array $options = array())
     {
-        if (!empty($options))
-        {
+        if (!empty($options)) {
             $this->options = array_merge($this->options, $options);
         }
     }
